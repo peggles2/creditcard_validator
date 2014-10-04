@@ -1,6 +1,13 @@
 // Place all the styles related to the creditcard controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#credit_card {
+#credit_card_container {
+  form {
+    margin-top:27px;
+  }
   margin-top:20px;
+  label {
+    width: 100px; 
+    
+  }
 }
