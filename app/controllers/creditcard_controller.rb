@@ -4,10 +4,10 @@ class CreditcardController < ApplicationController
   
   
   def validate_card
-    #get card number and card type
-    card_number  = params[:credit_card]
+    #get card number and card type and clean up any none digits
+    card_number  = params[:credit_card].gsub(/\D/, '')
     card_type    = params[:credit_card_type]
- 
+     
    #initialize is_valid to false
     is_valid     = false
     
