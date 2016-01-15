@@ -33,7 +33,7 @@ class CreditcardController < ApplicationController
       numbers << number.to_i
     end
     numbers.collect {|i| total+=i }
-    is_valid = false if total % 10 == 0
+    is_valid = true if total % 10 == 0
     
     respond_to do |format|
        if is_valid
